@@ -46,6 +46,12 @@ class LoginPage(SeleniumDriver):
                                         locatorType="xpath")
         return result
 
+    def verifyTitle(self):
+        if "Google" in self.getTitle():
+            return True
+        else:
+            return False
+
     def clearFields(self):
         emailField = self.getElement(locator=self._email_field)
         emailField.clear()
