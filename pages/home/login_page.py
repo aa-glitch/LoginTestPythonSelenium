@@ -1,14 +1,14 @@
 
 from selenium.webdriver.common.by import By
-from base.selenium_driver import SeleniumDriver
+from base.basepage import BasePage
 import utilities.custom_logger as cl
 import logging
 
-class LoginPage(SeleniumDriver):
+class LoginPage(BasePage):
     log = cl.customLogger(logging.DEBUG)
 
     def __init__(self, driver):
-        super().__init__(driver)
+        super(BasePage, self).__init__(driver)
         self.driver = driver
 
     # locators
@@ -37,7 +37,7 @@ class LoginPage(SeleniumDriver):
         self.clickLoginButton()
 
     def verifyLoginSuccessful(self):
-        result =  self.isElementPresent("//*[@id='navbar']//span[text()='Test User']",
+        result =  self.isElementPresent("//img[@class='gravatar']",
                                         locatorType="xpath")
         return result
 
@@ -46,11 +46,8 @@ class LoginPage(SeleniumDriver):
                                         locatorType="xpath")
         return result
 
-    def verifyTitle(self):
-        if "Google" in self.getTitle():
-            return True
-        else:
-            return False
+    def verifyLoginTitle(self):
+        return self.verifyPageTitle("Google")
 
     def clearFields(self):
         emailField = self.getElement(locator=self._email_field)

@@ -235,7 +235,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>htmlReports.html</h1>
-    <p>Report generated on 25-Oct-2018 at 07:13:28 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.19.0</p>
+    <p>Report generated on 30-Oct-2018 at 05:49:09 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.19.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -243,7 +243,7 @@ function filter_table(elem) {
         <td>C:\Program Files\Java\jdk1.8.0_171</td></tr>
       <tr>
         <td>Packages</td>
-        <td>{&apos;pluggy&apos;: &apos;0.8.0&apos;, &apos;pytest&apos;: &apos;3.9.2&apos;, &apos;py&apos;: &apos;1.7.0&apos;}</td></tr>
+        <td>{&apos;pluggy&apos;: &apos;0.8.0&apos;, &apos;py&apos;: &apos;1.7.0&apos;, &apos;pytest&apos;: &apos;3.9.2&apos;}</td></tr>
       <tr>
         <td>Platform</td>
         <td>Windows-10-10.0.17134</td></tr>
@@ -254,8 +254,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.4.4</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 43.65 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 75.65 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -266,39 +266,41 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">tests/home/login_tests.py::LoginTests::test_validLogin</td>
-          <td class="col-duration">6.52</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;tests.home.login_tests.LoginTests testMethod=test_validLogin&gt;<br/><br/>    @pytest.mark.run(order=2)<br/>    def test_validLogin(self):<br/>        self.lp.clearFields()<br/>        self.lp.login(&quot;test@email.com&quot;, &quot;abcabc&quot;)<br/>&gt;       result1 = self.lp.verifyTitle()<br/><br/>tests\home\login_tests.py:22: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;pages.home.login_page.LoginPage object at 0x041CB530&gt;<br/><br/>    def verifyTitle(self):<br/>&gt;       if &quot;Google&quot; in self.getTitle():<br/><span class="error">E       AttributeError: &#x27;LoginPage&#x27; object has no attribute &#x27;getTitle&#x27;</span><br/><br/>pages\home\login_page.py:50: AttributeError<br/>------------------------------ Captured log call -------------------------------<br/>selenium_driver.py          43 INFO     Element Found with locator: user_email and locatorType: id
-selenium_driver.py          43 INFO     Element Found with locator: user_password and locatorType: id
-selenium_driver.py          46 INFO     Element not Found with locator: Login and locatorType: link
-selenium_driver.py          68 INFO     cannot click on element with locator: Login locatorType: link
-selenium_driver.py          43 INFO     Element Found with locator: user_email and locatorType: id
-selenium_driver.py          54 INFO     Sent data on element with locator: user_email and locatorType: id
-selenium_driver.py          43 INFO     Element Found with locator: user_password and locatorType: id
-selenium_driver.py          54 INFO     Sent data on element with locator: user_password and locatorType: id
-selenium_driver.py          43 INFO     Element Found with locator: commit and locatorType: name
-selenium_driver.py          65 INFO     clicked on element with locator: commit locatorType: name</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/home/login_tests.py::LoginTests::test_invalidLogin</td>
-          <td class="col-duration">10.80</td>
+          <td class="col-name">tests/home/register_courses_tests.py::RegisterCoursesTests::test_invalidEnrollment</td>
+          <td class="col-duration">19.77</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">------------------------------ Captured log call -------------------------------<br/>selenium_driver.py          43 INFO     Element Found with locator: Login and locatorType: link
-selenium_driver.py          65 INFO     clicked on element with locator: Login locatorType: link
-selenium_driver.py          43 INFO     Element Found with locator: user_email and locatorType: id
-selenium_driver.py          54 INFO     Sent data on element with locator: user_email and locatorType: id
-selenium_driver.py          43 INFO     Element Found with locator: user_password and locatorType: id
-selenium_driver.py          54 INFO     Sent data on element with locator: user_password and locatorType: id
-selenium_driver.py          43 INFO     Element Found with locator: commit and locatorType: name
-selenium_driver.py          65 INFO     clicked on element with locator: commit locatorType: name
-selenium_driver.py          43 INFO     Element Found with locator: //div[contains(text(),&#x27;Invalid email or password&#x27;)] and locatorType: xpath
-selenium_driver.py          76 INFO     Element Found</div></td></tr></tbody></table></body></html>
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>selenium_driver.py          65 INFO     Element Found with locator: Login and locatorType: link
+selenium_driver.py          87 INFO     clicked on element with locator: Login locatorType: link
+selenium_driver.py          65 INFO     Element Found with locator: user_email and locatorType: id
+selenium_driver.py          76 INFO     Sent data on element with locator: user_email and locatorType: id
+selenium_driver.py          65 INFO     Element Found with locator: user_password and locatorType: id
+selenium_driver.py          76 INFO     Sent data on element with locator: user_password and locatorType: id
+selenium_driver.py          65 INFO     Element Found with locator: commit and locatorType: name
+selenium_driver.py          87 INFO     clicked on element with locator: commit locatorType: name------------------------------ Captured log call -------------------------------<br/>selenium_driver.py          65 INFO     Element Found with locator: search-courses and locatorType: id
+selenium_driver.py          76 INFO     Sent data on element with locator: search-courses and locatorType: id
+selenium_driver.py          65 INFO     Element Found with locator: search-course-button and locatorType: id
+selenium_driver.py          87 INFO     clicked on element with locator: search-course-button locatorType: id
+selenium_driver.py          65 INFO     Element Found with locator: //div[contains(@class,&#x27;course-listing-title&#x27;) and contains(text(),&#x27;JavaScript for beginners&#x27;)] and locatorType: xpath
+selenium_driver.py          87 INFO     clicked on element with locator: //div[contains(@class,&#x27;course-listing-title&#x27;) and contains(text(),&#x27;JavaScript for beginners&#x27;)] locatorType: xpath
+selenium_driver.py          65 INFO     Element Found with locator: enroll-button-top and locatorType: id
+selenium_driver.py          87 INFO     clicked on element with locator: enroll-button-top locatorType: id
+selenium_driver.py          65 INFO     Element Found with locator: //input[@aria-label=&#x27;Credit or debit card number&#x27;] and locatorType: xpath
+selenium_driver.py          76 INFO     Sent data on element with locator: //input[@aria-label=&#x27;Credit or debit card number&#x27;] and locatorType: xpath
+selenium_driver.py          65 INFO     Element Found with locator: exp-date and locatorType: name
+selenium_driver.py          76 INFO     Sent data on element with locator: exp-date and locatorType: name
+selenium_driver.py          65 INFO     Element Found with locator: cvc and locatorType: name
+selenium_driver.py          76 INFO     Sent data on element with locator: cvc and locatorType: name
+selenium_driver.py          65 INFO     Element Found with locator: postal and locatorType: name
+selenium_driver.py          76 INFO     Sent data on element with locator: postal and locatorType: name
+selenium_driver.py          65 INFO     Element Found with locator: agreed_to_terms_checkbox and locatorType: id
+selenium_driver.py          87 INFO     clicked on element with locator: agreed_to_terms_checkbox locatorType: id
+selenium_driver.py          65 INFO     Element Found with locator: //button[@id=&#x27;confirm-purchase&#x27;]/parent::div and locatorType: xpath
+selenium_driver.py         234 INFO     Attribute value From Application Web UI --&gt; :: spc__primary-submit is-disabled
+selenium_driver.py         239 INFO     Element :: &#x27;Enroll Button&#x27; is not enabled
+teststatus.py               31 INFO     ### VERIFICATION SUCCESSFUL :: + Enrollment Failed Verification
+teststatus.py               65 INFO     test_invalidEnrollment ### TEST SUCCESSFUL</div></td></tr></tbody></table></body></html>
